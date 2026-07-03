@@ -335,7 +335,7 @@ function renderMarkdown(text: string): string {
     .replace(/> (.+)/g, '<blockquote>$1</blockquote>')
 }
 
-const API_BASE = 'http://localhost:8080'
+const API_BASE = import.meta.env.VITE_API_BASE_URL || ''
 
 async function sendMessage() {
   const text = inputText.value.trim()
@@ -369,6 +369,8 @@ async function sendMessage() {
   let routedFallback: ChatMessage | null = null
 
   try {
+    if (!API_BASE) throw new Error('demo_mode')
+
     const controller = new AbortController()
     streamTimer = setTimeout(() => controller.abort(), 60000)
 
