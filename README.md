@@ -2,6 +2,8 @@
 
 面向工程项目管理场景的 AI Agent 原型平台。项目以真实装配式建筑工程资料为业务背景，围绕工程资料管理、BOM 审核、进度风险识别、设计变更追踪等工作流，构建一个可用于作品集和简历展示的 AI 工程项目管理系统。
 
+在线 Demo：[https://zhulvglos.github.io/ai-project-management-agent/](https://zhulvglos.github.io/ai-project-management-agent/)
+
 ## 项目定位
 
 本项目对应简历中的 **AI 工程项目管理 Agent 平台**，核心主题是：
